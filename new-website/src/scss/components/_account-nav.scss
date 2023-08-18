@@ -1,0 +1,221 @@
+/*
+// .account-nav
+*/
+@import "../variables";
+@import "../functions";
+@import "../mixins/card";
+@import "../mixins/direction";
+
+.account-nav {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+.account-nav__item a {
+  display: block;
+  color: $body-font-alt-color;
+  font-size: 15px;
+
+  &:hover {
+    background-color: #f7f7f7;
+  }
+}
+
+/*
+//product detail
+*/
+@media only screen and (max-width: 768px) {
+  .CXW8mj {
+    height: 75px;
+    width: 59px !important;
+  }
+  .Address-nameNumber {
+    display: flex;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #282c3f;
+    font-weight: 600;
+    height: 40 px !important;
+    text-shadow: 0 1px 3px rgb(0 0 0 / 10%);
+  }
+}
+.CXW8mj {
+  height: 75px;
+  width: 76px;
+}
+.order-list-bk:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+.order-list-bk {
+  padding: 16px;
+  width: 100%;
+  font-size: 14px;
+  overflow: hidden;
+  transition: box-shadow 0.1s linear;
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  position: relative;
+  cursor: pointer;
+  display: block;
+  box-shadow: 0 0 0 0 rgb(0 0 0 / 15%);
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+.order-list-bk .item-name h5 {
+  box-shadow: none;
+  padding: 0;
+  border: none;
+  font-size: 14px;
+  text-decoration: none;
+  color: #212121;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+.order-list-bk .item-name h6 {
+  color: #878787;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.order-list-bk .item-name .dot-icon {
+  background-color: #ff6161;
+  border: 2px solid #ff6161;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: none;
+  border: 2px solid #26a541;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.order-list-bk .address .t1 {
+  margin-right: 8px;
+  color: rgb(40, 44, 63);
+  font-weight: 600;
+  height: 21px;
+  font-size: 18px;
+}
+.Address-nameNumber {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #282c3f;
+  font-weight: 600;
+  height: 16px;
+  text-shadow: 0 1px 3px rgb(0 0 0 / 10%);
+}
+.CXW8mj ._396cs4 {
+  height: auto !important;
+  max-width: 100% !important;
+}
+.Address-nameNumber .name {
+  font-family: Whitney;
+  font-size: 14px;
+  line-height: 1;
+  color: #282c3f;
+}
+.Address-verticalDivider {
+  width: 1px;
+  height: 13px;
+  border-left: solid 1px #e5e5e5;
+}
+.order-list-bk .shipping {
+  padding-top: 6px;
+  line-height: 1.5;
+  color: rgb(105, 110, 121);
+}
+.order-id {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  background-color: white;
+  padding: 5px;
+  color: rgb(105, 110, 121);
+}
+.cancellationReason-heading1 {
+  font-weight: 800;
+  color: #282c3f;
+  font-size: 16px;
+  margin-top: 7px;
+}
+.cancellationReason-reasonMessageOne {
+  margin: 11px 0px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #696e79;
+}
+.RadioDropdown-reasonHeader {
+  height: 15px;
+  font-family: Whitney;
+  font-size: 12px;
+  font-weight: 500;
+  color: #a9abb3;
+}
+//end
+@media (min-width: breakpoint(lg-start)) {
+  .account-nav {
+    @include card;
+
+    ul {
+      padding-bottom: 18px;
+    }
+  }
+  .account-nav__title {
+    font-size: 20px;
+    padding: 24px 26px 0;
+    margin-bottom: 1rem;
+  }
+  .account-nav__item a {
+    padding: 5px 26px;
+
+    @include direction {
+      #{$margin-inline-start}: -2px;
+      #{$border-inline-start}: $card-border-width solid $card-border-color;
+    }
+  }
+  .account-nav__item--active a {
+    color: $body-font-color;
+    font-weight: $font-weight-medium;
+
+    @include direction {
+      #{$border-inline-start}: $card-border-width solid $accent-color;
+    }
+  }
+}
+
+@media (max-width: breakpoint(md-end)) {
+  .account-nav__title {
+    display: none;
+  }
+  .account-nav {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+
+    ul {
+      display: flex;
+      flex-wrap: nowrap;
+      white-space: nowrap;
+      width: 100%;
+      border-bottom: $card-border-width solid $card-border-color;
+    }
+  }
+  .account-nav__item a {
+    padding: 8px 16px;
+    margin-bottom: -2px;
+    border-bottom: $card-border-width solid $card-border-color;
+  }
+  .account-nav__item--active a {
+    color: $body-font-color;
+    font-weight: $font-weight-medium;
+    border-color: $accent-color;
+  }
+}

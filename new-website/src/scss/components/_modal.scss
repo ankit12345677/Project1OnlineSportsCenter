@@ -1,0 +1,16 @@
+/*
+// .modal
+*/
+@import '../variables';
+
+
+.modal {
+    -webkit-overflow-scrolling: touch;
+}
+.modal-content {
+    border: none;
+    position:absolute;
+    top: -40px;
+    border-radius: $modal-border-radius;
+    box-shadow: $modal-shadow;
+}

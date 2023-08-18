@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <base href="%PUBLIC_URL%/" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="shortcut icon" href="/images/logo.png" rel="stylesheet"/>
+    <title>
+      The Best Online Shopping Platform in Mumbai | Buy at affordable price in Mumbai | SportsCenter
+    </title>
+
+    <!-- fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i"
+    />
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-59L82NM");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <meta data-react-helmet="true" name="author" content="SportsCenter" />
+    <meta
+      data-react-helmet="true"
+      name="application-name"
+      content="SportsCenter"
+    />
+    <meta
+      data-react-helmet="true"
+      name="og:type"
+      property="og:type"
+      content="website"
+    />
+
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <!--social verfication-->
+    <meta
+      name="google-site-verification"
+      content="1BhqK_kPlwNHq1QI5Kegu29sYYVSGhgzcZ0J3rktjoE"
+    />
+    <meta
+      name="facebook-domain-verification"
+      content="l0z7t9j65chnt157unwtly9oyj659d"
+    />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-FEH6S20M19"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-FEH6S20M19");
+    </script>
+
+    <!--Adsense account-->
+    <!-- <script
+      data-ad-client="ca-pub-6817964397049684"
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script> -->
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "550608882592072");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=550608882592072&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="site-preloader">
+      <style>
+        @keyframes site-preloader-animation {
+          from {
+            transform: rotateZ(0deg);
+          }
+          to {
+            transform: rotateZ(360deg);
+          }
+        }
+
+        body {
+          overflow: hidden !important;
+          overflow-y: scroll !important;
+          height: 100% !important;
+        }
+
+        .site-preloader {
+          position: fixed;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          background-color: #fff;
+          z-index: 99999;
+          opacity: 0.4;
+        }
+        .site-preloader::before {
+          box-sizing: border-box;
+          content: "";
+          display: block;
+          position: absolute;
+          left: calc(50% - 50px);
+          top: calc(50% - 50px);
+          width: 100px;
+          height: 100px;
+          border-radius: 50px;
+          border: 3px solid rgba(0, 0, 0, 0.2);
+          border-top-color: rgba(0, 0, 0, 0.6);
+
+          animation-name: site-preloader-animation;
+          animation-duration: 0.5s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+        }
+        .site-preloader__fade {
+          transition: opacity 0.3s;
+          opacity: 0;
+        }
+      </style>
+    </div>
+    <div id="root"></div>
+    <!--
+  This HTML file is a template.
+  If you open it directly in the browser, you will see an empty page.
+
+  You can add webfonts, meta tags, or analytics to this file.
+  The build step will place the bundled scripts into the <body> tag.
+
+  To begin the development, run `npm start` or `yarn start`.
+  To create a production bundle, use `npm run build` or `yarn build`.
+-->
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: "v10.0",
+        });
+      };
+
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
+
+    <!-- Your Chat Plugin code -->
+    <div
+      class="fb-customerchat"
+      attribution="page_inbox"
+      page_id="109944180925776"
+    ></div>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-59L82NM"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+  </body>
+</html>
